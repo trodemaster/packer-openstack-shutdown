@@ -1,0 +1,358 @@
+2017/11/11 13:13:56 [INFO] Packer version: 1.1.2-dev
+2017/11/11 13:13:56 Packer Target OS/Arch: darwin amd64
+2017/11/11 13:13:56 Built with Go Version: go1.9.1
+2017/11/11 13:13:56 Detected home directory from env var: /Users/blake
+2017/11/11 13:13:56 Using internal plugin for null
+2017/11/11 13:13:56 Using internal plugin for oneandone
+2017/11/11 13:13:56 Using internal plugin for qemu
+2017/11/11 13:13:56 Using internal plugin for triton
+2017/11/11 13:13:56 Using internal plugin for virtualbox-iso
+2017/11/11 13:13:56 Using internal plugin for alicloud-ecs
+2017/11/11 13:13:56 Using internal plugin for lxd
+2017/11/11 13:13:56 Using internal plugin for virtualbox-ovf
+2017/11/11 13:13:56 Using internal plugin for amazon-ebsvolume
+2017/11/11 13:13:56 Using internal plugin for digitalocean
+2017/11/11 13:13:56 Using internal plugin for lxc
+2017/11/11 13:13:56 Using internal plugin for oracle-oci
+2017/11/11 13:13:56 Using internal plugin for parallels-pvm
+2017/11/11 13:13:56 Using internal plugin for amazon-instance
+2017/11/11 13:13:56 Using internal plugin for amazon-ebs
+2017/11/11 13:13:56 Using internal plugin for azure-arm
+2017/11/11 13:13:56 Using internal plugin for docker
+2017/11/11 13:13:56 Using internal plugin for file
+2017/11/11 13:13:56 Using internal plugin for googlecompute
+2017/11/11 13:13:56 Using internal plugin for openstack
+2017/11/11 13:13:56 Using internal plugin for amazon-ebssurrogate
+2017/11/11 13:13:56 Using internal plugin for cloudstack
+2017/11/11 13:13:56 Using internal plugin for hyperv-iso
+2017/11/11 13:13:56 Using internal plugin for hyperv-vmcx
+2017/11/11 13:13:56 Using internal plugin for vmware-iso
+2017/11/11 13:13:56 Using internal plugin for vmware-vmx
+2017/11/11 13:13:56 Using internal plugin for amazon-chroot
+2017/11/11 13:13:56 Using internal plugin for parallels-iso
+2017/11/11 13:13:56 Using internal plugin for profitbricks
+2017/11/11 13:13:56 Using internal plugin for shell
+2017/11/11 13:13:56 Using internal plugin for powershell
+2017/11/11 13:13:56 Using internal plugin for salt-masterless
+2017/11/11 13:13:56 Using internal plugin for file
+2017/11/11 13:13:56 Using internal plugin for puppet-masterless
+2017/11/11 13:13:56 Using internal plugin for windows-restart
+2017/11/11 13:13:56 Using internal plugin for ansible-local
+2017/11/11 13:13:56 Using internal plugin for converge
+2017/11/11 13:13:56 Using internal plugin for ansible
+2017/11/11 13:13:56 Using internal plugin for shell-local
+2017/11/11 13:13:56 Using internal plugin for puppet-server
+2017/11/11 13:13:56 Using internal plugin for windows-shell
+2017/11/11 13:13:56 Using internal plugin for chef-client
+2017/11/11 13:13:56 Using internal plugin for chef-solo
+2017/11/11 13:13:56 Using internal plugin for vsphere
+2017/11/11 13:13:56 Using internal plugin for docker-push
+2017/11/11 13:13:56 Using internal plugin for docker-save
+2017/11/11 13:13:56 Using internal plugin for docker-tag
+2017/11/11 13:13:56 Using internal plugin for googlecompute-export
+2017/11/11 13:13:56 Using internal plugin for manifest
+2017/11/11 13:13:56 Using internal plugin for shell-local
+2017/11/11 13:13:56 Using internal plugin for alicloud-import
+2017/11/11 13:13:56 Using internal plugin for amazon-import
+2017/11/11 13:13:56 Using internal plugin for atlas
+2017/11/11 13:13:56 Using internal plugin for checksum
+2017/11/11 13:13:56 Using internal plugin for vagrant
+2017/11/11 13:13:56 Using internal plugin for vagrant-cloud
+2017/11/11 13:13:56 Using internal plugin for vsphere-template
+2017/11/11 13:13:56 Using internal plugin for artifice
+2017/11/11 13:13:56 Using internal plugin for compress
+2017/11/11 13:13:56 Using internal plugin for docker-import
+2017/11/11 13:13:56 Detected home directory from env var: /Users/blake
+2017/11/11 13:13:56 Attempting to open config file: /Users/blake/.packerconfig
+2017/11/11 13:13:56 [WARN] Config file doesn't exist: /Users/blake/.packerconfig
+2017/11/11 13:13:56 Packer config: &{DisableCheckpoint:false DisableCheckpointSignature:false PluginMinPort:10000 PluginMaxPort:25000 Builders:map[lxc:/files/go/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-lxc docker:/files/go/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-docker amazon-ebssurrogate:/files/go/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-amazon-ebssurrogate vmware-iso:/files/go/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-vmware-iso vmware-vmx:/files/go/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-vmware-vmx amazon-chroot:/files/go/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-amazon-chroot amazon-ebs:/files/go/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-amazon-ebs hyperv-vmcx:/files/go/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-hyperv-vmcx triton:/files/go/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-triton oracle-oci:/files/go/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-oracle-oci azure-arm:/files/go/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-azure-arm hyperv-iso:/files/go/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-hyperv-iso qemu:/files/go/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-qemu parallels-pvm:/files/go/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-parallels-pvm digitalocean:/files/go/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-digitalocean file:/files/go/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-file openstack:/files/go/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-openstack cloudstack:/files/go/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-cloudstack virtualbox-iso:/files/go/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-virtualbox-iso alicloud-ecs:/files/go/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-alicloud-ecs googlecompute:/files/go/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-googlecompute profitbricks:/files/go/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-profitbricks lxd:/files/go/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-lxd amazon-ebsvolume:/files/go/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-amazon-ebsvolume null:/files/go/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-null oneandone:/files/go/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-oneandone virtualbox-ovf:/files/go/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-virtualbox-ovf amazon-instance:/files/go/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-amazon-instance parallels-iso:/files/go/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-parallels-iso] PostProcessors:map[vagrant:/files/go/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-vagrant docker-import:/files/go/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-docker-import amazon-import:/files/go/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-amazon-import checksum:/files/go/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-checksum artifice:/files/go/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-artifice compress:/files/go/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-compress vsphere:/files/go/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-vsphere alicloud-import:/files/go/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-alicloud-import atlas:/files/go/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-atlas googlecompute-export:/files/go/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-googlecompute-export manifest:/files/go/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-manifest shell-local:/files/go/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-shell-local vagrant-cloud:/files/go/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-vagrant-cloud vsphere-template:/files/go/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-vsphere-template docker-push:/files/go/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-docker-push docker-save:/files/go/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-docker-save docker-tag:/files/go/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-docker-tag] Provisioners:map[ansible-local:/files/go/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-ansible-local file:/files/go/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-file puppet-masterless:/files/go/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-puppet-masterless windows-restart:/files/go/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-windows-restart ansible:/files/go/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-ansible chef-solo:/files/go/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-chef-solo windows-shell:/files/go/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-windows-shell puppet-server:/files/go/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-puppet-server chef-client:/files/go/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-chef-client shell:/files/go/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-shell powershell:/files/go/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-powershell salt-masterless:/files/go/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-salt-masterless converge:/files/go/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-converge shell-local:/files/go/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-shell-local]}
+2017/11/11 13:13:56 Detected home directory from env var: /Users/blake
+2017/11/11 13:13:56 Setting cache directory: /files/packer-openstack-shutdown/packer_cache
+2017/11/11 13:13:56 Detected home directory from env var: /Users/blake
+2017/11/11 13:13:56 Loading builder: openstack
+2017/11/11 13:13:56 Plugin could not be found. Checking same directory as executable.
+2017/11/11 13:13:56 Current exe path: /files/go/bin/packer
+2017/11/11 13:13:56 Creating plugin client for path: /files/go/bin/packer
+2017/11/11 13:13:56 Starting plugin: /files/go/bin/packer []string{"/files/go/bin/packer", "plugin", "packer-builder-openstack"}
+2017/11/11 13:13:56 Waiting for RPC address for: /files/go/bin/packer
+2017/11/11 13:13:56 packer: 2017/11/11 13:13:56 [INFO] Packer version: 1.1.2-dev
+2017/11/11 13:13:56 packer: 2017/11/11 13:13:56 Packer Target OS/Arch: darwin amd64
+2017/11/11 13:13:56 packer: 2017/11/11 13:13:56 Built with Go Version: go1.9.1
+2017/11/11 13:13:56 packer: 2017/11/11 13:13:56 Detected home directory from env var: /Users/blake
+2017/11/11 13:13:56 packer: 2017/11/11 13:13:56 Attempting to open config file: /Users/blake/.packerconfig
+2017/11/11 13:13:56 packer: 2017/11/11 13:13:56 [WARN] Config file doesn't exist: /Users/blake/.packerconfig
+2017/11/11 13:13:56 packer: 2017/11/11 13:13:56 Packer config: &{DisableCheckpoint:false DisableCheckpointSignature:false PluginMinPort:10000 PluginMaxPort:25000 Builders:map[] PostProcessors:map[] Provisioners:map[]}
+2017/11/11 13:13:56 packer: 2017/11/11 13:13:56 Detected home directory from env var: /Users/blake
+2017/11/11 13:13:56 packer: 2017/11/11 13:13:56 Setting cache directory: /files/packer-openstack-shutdown/packer_cache
+2017/11/11 13:13:56 packer: 2017/11/11 13:13:56 args: []string{"packer-builder-openstack"}
+2017/11/11 13:13:56 packer: 2017/11/11 13:13:56 Plugin minimum port: 10000
+2017/11/11 13:13:56 packer: 2017/11/11 13:13:56 Plugin maximum port: 25000
+2017/11/11 13:13:56 packer: 2017/11/11 13:13:56 Detected home directory from env var: /Users/blake
+2017/11/11 13:13:56 packer: 2017/11/11 13:13:56 Plugin address: unix /var/folders/lp/r_zxbw350rx2nf5pyp_c956c0000gn/T/packer-plugin575583587
+2017/11/11 13:13:56 packer: 2017/11/11 13:13:56 Waiting for connection...
+2017/11/11 13:13:56 packer: 2017/11/11 13:13:56 Serving a plugin connection...
+2017/11/11 13:13:56 Loading provisioner: shell
+2017/11/11 13:13:56 Plugin could not be found. Checking same directory as executable.
+2017/11/11 13:13:56 Current exe path: /files/go/bin/packer
+2017/11/11 13:13:56 Creating plugin client for path: /files/go/bin/packer
+2017/11/11 13:13:56 Starting plugin: /files/go/bin/packer []string{"/files/go/bin/packer", "plugin", "packer-provisioner-shell"}
+2017/11/11 13:13:56 Waiting for RPC address for: /files/go/bin/packer
+2017/11/11 13:13:56 packer: 2017/11/11 13:13:56 [INFO] Packer version: 1.1.2-dev
+2017/11/11 13:13:56 packer: 2017/11/11 13:13:56 Packer Target OS/Arch: darwin amd64
+2017/11/11 13:13:56 packer: 2017/11/11 13:13:56 Built with Go Version: go1.9.1
+2017/11/11 13:13:56 packer: 2017/11/11 13:13:56 Detected home directory from env var: /Users/blake
+2017/11/11 13:13:56 packer: 2017/11/11 13:13:56 Attempting to open config file: /Users/blake/.packerconfig
+2017/11/11 13:13:56 packer: 2017/11/11 13:13:56 [WARN] Config file doesn't exist: /Users/blake/.packerconfig
+2017/11/11 13:13:56 packer: 2017/11/11 13:13:56 Packer config: &{DisableCheckpoint:false DisableCheckpointSignature:false PluginMinPort:10000 PluginMaxPort:25000 Builders:map[] PostProcessors:map[] Provisioners:map[]}
+2017/11/11 13:13:56 packer: 2017/11/11 13:13:56 Detected home directory from env var: /Users/blake
+2017/11/11 13:13:56 packer: 2017/11/11 13:13:56 Setting cache directory: /files/packer-openstack-shutdown/packer_cache
+2017/11/11 13:13:56 packer: 2017/11/11 13:13:56 args: []string{"packer-provisioner-shell"}
+2017/11/11 13:13:56 packer: 2017/11/11 13:13:56 Plugin minimum port: 10000
+2017/11/11 13:13:56 packer: 2017/11/11 13:13:56 Plugin maximum port: 25000
+2017/11/11 13:13:56 packer: 2017/11/11 13:13:56 Detected home directory from env var: /Users/blake
+2017/11/11 13:13:56 packer: 2017/11/11 13:13:56 Plugin address: unix /var/folders/lp/r_zxbw350rx2nf5pyp_c956c0000gn/T/packer-plugin454872943
+2017/11/11 13:13:56 packer: 2017/11/11 13:13:56 Waiting for connection...
+2017/11/11 13:13:56 packer: 2017/11/11 13:13:56 Serving a plugin connection...
+2017/11/11 13:13:56 Loading provisioner: shell-local
+2017/11/11 13:13:56 Plugin could not be found. Checking same directory as executable.
+2017/11/11 13:13:56 Current exe path: /files/go/bin/packer
+2017/11/11 13:13:56 Creating plugin client for path: /files/go/bin/packer
+2017/11/11 13:13:56 Starting plugin: /files/go/bin/packer []string{"/files/go/bin/packer", "plugin", "packer-provisioner-shell-local"}
+2017/11/11 13:13:56 Waiting for RPC address for: /files/go/bin/packer
+2017/11/11 13:13:56 packer: 2017/11/11 13:13:56 [INFO] Packer version: 1.1.2-dev
+2017/11/11 13:13:56 packer: 2017/11/11 13:13:56 Packer Target OS/Arch: darwin amd64
+2017/11/11 13:13:56 packer: 2017/11/11 13:13:56 Built with Go Version: go1.9.1
+2017/11/11 13:13:56 packer: 2017/11/11 13:13:56 Detected home directory from env var: /Users/blake
+2017/11/11 13:13:56 packer: 2017/11/11 13:13:56 Attempting to open config file: /Users/blake/.packerconfig
+2017/11/11 13:13:56 packer: 2017/11/11 13:13:56 [WARN] Config file doesn't exist: /Users/blake/.packerconfig
+2017/11/11 13:13:56 packer: 2017/11/11 13:13:56 Packer config: &{DisableCheckpoint:false DisableCheckpointSignature:false PluginMinPort:10000 PluginMaxPort:25000 Builders:map[] PostProcessors:map[] Provisioners:map[]}
+2017/11/11 13:13:56 packer: 2017/11/11 13:13:56 Detected home directory from env var: /Users/blake
+2017/11/11 13:13:56 packer: 2017/11/11 13:13:56 Setting cache directory: /files/packer-openstack-shutdown/packer_cache
+2017/11/11 13:13:56 packer: 2017/11/11 13:13:56 args: []string{"packer-provisioner-shell-local"}
+2017/11/11 13:13:56 packer: 2017/11/11 13:13:56 Detected home directory from env var: /Users/blake
+2017/11/11 13:13:56 packer: 2017/11/11 13:13:56 Plugin minimum port: 10000
+2017/11/11 13:13:56 packer: 2017/11/11 13:13:56 Plugin maximum port: 25000
+2017/11/11 13:13:56 packer: 2017/11/11 13:13:56 Plugin address: unix /var/folders/lp/r_zxbw350rx2nf5pyp_c956c0000gn/T/packer-plugin125656051
+2017/11/11 13:13:56 packer: 2017/11/11 13:13:56 Waiting for connection...
+2017/11/11 13:13:56 packer: 2017/11/11 13:13:56 Serving a plugin connection...
+2017/11/11 13:13:56 ui: [1;32mopenstack output will be in this color.[0m
+2017/11/11 13:13:56 ui: 
+2017/11/11 13:13:56 Build debug mode: false
+2017/11/11 13:13:56 Force build: false
+2017/11/11 13:13:56 On error: 
+2017/11/11 13:13:56 Preparing build: openstack
+2017/11/11 13:13:57 packer: 2017/11/11 13:13:57 Config: {PackerConfig:{PackerBuildName:openstack PackerBuilderType:openstack PackerDebug:false PackerForce:false PackerOnError: PackerUserVars:map[OS_TENANT_NAME:Image_pipeline OS_USERNAME:bgarner OPENSTACK_NETWORK:8ba30100-17cb-41f6-8872-bfd74ec5c4b2 OS_AUTH_URL:https://sj1sz1-openstack.corp.adobe.com:5000/v2.0/ OS_PASSWORD:<Filtered> OS_REGION_NAME:uswestsj1]} AccessConfig:{Username:bgarner UserID: Password:<Filtered> IdentityEndpoint:https://sj1sz1-openstack.corp.adobe.com:5000/v2.0/ TenantID: TenantName:Image_pipeline DomainID: DomainName: Insecure:false Region:uswestsj1 EndpointType: CACertFile: ClientCertFile: ClientKeyFile: osClient:0xc4203d0480} ImageConfig:{ImageName:packer-Ubuntu1604-shutdown ImageMetadata:map[image_type:image] ImageVisibility: ImageMembers:[]} RunConfig:{Comm:{Type:ssh SSHHost: SSHPort:22 SSHUsername:root SSHPassword: SSHPrivateKey: SSHPty:false SSHTimeout:5m0s SSHAgentAuth:false SSHDisableAgentForwarding:false SSHHandshakeAttempts:10 SSHBastionHost: SSHBastionPort:0 SSHBastionAgentAuth:false SSHBastionUsername: SSHBastionPassword: SSHBastionPrivateKey: SSHFileTransferMethod:scp SSHProxyHost: SSHProxyPort:0 SSHProxyUsername: SSHProxyPassword: WinRMUser: WinRMPassword: WinRMHost: WinRMPort:0 WinRMTimeout:0s WinRMUseSSL:false WinRMInsecure:false WinRMUseNTLM:false WinRMTransportDecorator:<nil>} SSHKeyPairName: TemporaryKeyPairName:packer_5a076815-06e0-c52f-0890-27dfee4fb1c3 SSHInterface: SSHIPVersion: SourceImage: SourceImageName:packer-Ubuntu1604 Flavor:m4.medium AvailabilityZone: RackconnectWait:false FloatingIpPool: FloatingIp: ReuseIps:false SecurityGroups:[] Networks:[8ba30100-17cb-41f6-8872-bfd74ec5c4b2] UserData: UserDataFile:user_data InstanceMetadata:map[] ConfigDrive:false OpenstackProvider: UseFloatingIp:false} ctx:{Data:<nil> Funcs:map[] UserVariables:map[OS_TENANT_NAME:Image_pipeline OS_USERNAME:bgarner OPENSTACK_NETWORK:8ba30100-17cb-41f6-8872-bfd74ec5c4b2 OS_AUTH_URL:https://sj1sz1-openstack.corp.adobe.com:5000/v2.0/ OS_PASSWORD:<Filtered> OS_REGION_NAME:uswestsj1] EnableEnv:false BuildName:openstack BuildType:openstack TemplatePath:/files/packer-openstack-shutdown/shutdown_error.json}}
+2017/11/11 13:13:57 Waiting on builds to complete...
+2017/11/11 13:13:57 Starting build run: openstack
+2017/11/11 13:13:57 Running builder: openstack
+2017/11/11 13:13:57 [INFO] (telemetry) Starting builder openstack
+2017/11/11 13:13:57 ui: [1;32m==> openstack: Discovering enabled extensions...[0m
+2017/11/11 13:13:57 packer: 2017/11/11 13:13:57 [DEBUG] Discovered extension: NMN
+2017/11/11 13:13:57 packer: 2017/11/11 13:13:57 [DEBUG] Discovered extension: OS-DCF
+2017/11/11 13:13:57 packer: 2017/11/11 13:13:57 [DEBUG] Discovered extension: OS-EXT-AZ
+2017/11/11 13:13:57 packer: 2017/11/11 13:13:57 [DEBUG] Discovered extension: OS-EXT-IMG-SIZE
+2017/11/11 13:13:57 packer: 2017/11/11 13:13:57 [DEBUG] Discovered extension: OS-EXT-IPS
+2017/11/11 13:13:57 packer: 2017/11/11 13:13:57 [DEBUG] Discovered extension: OS-EXT-IPS-MAC
+2017/11/11 13:13:57 packer: 2017/11/11 13:13:57 [DEBUG] Discovered extension: OS-EXT-SRV-ATTR
+2017/11/11 13:13:57 packer: 2017/11/11 13:13:57 [DEBUG] Discovered extension: OS-EXT-STS
+2017/11/11 13:13:57 packer: 2017/11/11 13:13:57 [DEBUG] Discovered extension: OS-FLV-DISABLED
+2017/11/11 13:13:57 packer: 2017/11/11 13:13:57 [DEBUG] Discovered extension: OS-FLV-EXT-DATA
+2017/11/11 13:13:57 packer: 2017/11/11 13:13:57 [DEBUG] Discovered extension: OS-SCH-HNT
+2017/11/11 13:13:57 packer: 2017/11/11 13:13:57 [DEBUG] Discovered extension: OS-SRV-USG
+2017/11/11 13:13:57 packer: 2017/11/11 13:13:57 [DEBUG] Discovered extension: os-access-ips
+2017/11/11 13:13:57 packer: 2017/11/11 13:13:57 [DEBUG] Discovered extension: os-admin-actions
+2017/11/11 13:13:57 packer: 2017/11/11 13:13:57 [DEBUG] Discovered extension: os-admin-password
+2017/11/11 13:13:57 packer: 2017/11/11 13:13:57 [DEBUG] Discovered extension: os-agents
+2017/11/11 13:13:57 packer: 2017/11/11 13:13:57 [DEBUG] Discovered extension: os-aggregates
+2017/11/11 13:13:57 packer: 2017/11/11 13:13:57 [DEBUG] Discovered extension: os-assisted-volume-snapshots
+2017/11/11 13:13:57 packer: 2017/11/11 13:13:57 [DEBUG] Discovered extension: os-attach-interfaces
+2017/11/11 13:13:57 packer: 2017/11/11 13:13:57 [DEBUG] Discovered extension: os-availability-zone
+2017/11/11 13:13:57 packer: 2017/11/11 13:13:57 [DEBUG] Discovered extension: os-baremetal-ext-status
+2017/11/11 13:13:57 packer: 2017/11/11 13:13:57 [DEBUG] Discovered extension: os-baremetal-nodes
+2017/11/11 13:13:57 packer: 2017/11/11 13:13:57 [DEBUG] Discovered extension: os-block-device-mapping
+2017/11/11 13:13:57 packer: 2017/11/11 13:13:57 [DEBUG] Discovered extension: os-block-device-mapping-v2-boot
+2017/11/11 13:13:57 packer: 2017/11/11 13:13:57 [DEBUG] Discovered extension: os-cell-capacities
+2017/11/11 13:13:57 packer: 2017/11/11 13:13:57 [DEBUG] Discovered extension: os-cells
+2017/11/11 13:13:57 packer: 2017/11/11 13:13:57 [DEBUG] Discovered extension: os-certificates
+2017/11/11 13:13:57 packer: 2017/11/11 13:13:57 [DEBUG] Discovered extension: os-cloudpipe
+2017/11/11 13:13:57 packer: 2017/11/11 13:13:57 [DEBUG] Discovered extension: os-cloudpipe-update
+2017/11/11 13:13:57 packer: 2017/11/11 13:13:57 [DEBUG] Discovered extension: os-config-drive
+2017/11/11 13:13:57 packer: 2017/11/11 13:13:57 [DEBUG] Discovered extension: os-console-auth-tokens
+2017/11/11 13:13:57 packer: 2017/11/11 13:13:57 [DEBUG] Discovered extension: os-console-output
+2017/11/11 13:13:57 packer: 2017/11/11 13:13:57 [DEBUG] Discovered extension: os-consoles
+2017/11/11 13:13:57 packer: 2017/11/11 13:13:57 [DEBUG] Discovered extension: os-create-backup
+2017/11/11 13:13:57 packer: 2017/11/11 13:13:57 [DEBUG] Discovered extension: os-create-server-ext
+2017/11/11 13:13:57 packer: 2017/11/11 13:13:57 [DEBUG] Discovered extension: os-deferred-delete
+2017/11/11 13:13:57 packer: 2017/11/11 13:13:57 [DEBUG] Discovered extension: os-evacuate
+2017/11/11 13:13:57 packer: 2017/11/11 13:13:57 [DEBUG] Discovered extension: os-extended-evacuate-find-host
+2017/11/11 13:13:57 packer: 2017/11/11 13:13:57 [DEBUG] Discovered extension: os-extended-floating-ips
+2017/11/11 13:13:57 packer: 2017/11/11 13:13:57 [DEBUG] Discovered extension: os-extended-hypervisors
+2017/11/11 13:13:57 packer: 2017/11/11 13:13:57 [DEBUG] Discovered extension: os-extended-networks
+2017/11/11 13:13:57 packer: 2017/11/11 13:13:57 [DEBUG] Discovered extension: os-extended-quotas
+2017/11/11 13:13:57 packer: 2017/11/11 13:13:57 [DEBUG] Discovered extension: os-extended-rescue-with-image
+2017/11/11 13:13:57 packer: 2017/11/11 13:13:57 [DEBUG] Discovered extension: os-extended-services
+2017/11/11 13:13:57 packer: 2017/11/11 13:13:57 [DEBUG] Discovered extension: os-extended-services-delete
+2017/11/11 13:13:57 packer: 2017/11/11 13:13:57 [DEBUG] Discovered extension: os-extended-status
+2017/11/11 13:13:57 packer: 2017/11/11 13:13:57 [DEBUG] Discovered extension: os-extended-volumes
+2017/11/11 13:13:57 packer: 2017/11/11 13:13:57 [DEBUG] Discovered extension: os-fixed-ips
+2017/11/11 13:13:57 packer: 2017/11/11 13:13:57 [DEBUG] Discovered extension: os-flavor-access
+2017/11/11 13:13:57 packer: 2017/11/11 13:13:57 [DEBUG] Discovered extension: os-flavor-extra-specs
+2017/11/11 13:13:57 packer: 2017/11/11 13:13:57 [DEBUG] Discovered extension: os-flavor-manage
+2017/11/11 13:13:57 packer: 2017/11/11 13:13:57 [DEBUG] Discovered extension: os-flavor-rxtx
+2017/11/11 13:13:57 packer: 2017/11/11 13:13:57 [DEBUG] Discovered extension: os-flavor-swap
+2017/11/11 13:13:57 packer: 2017/11/11 13:13:57 [DEBUG] Discovered extension: os-floating-ip-dns
+2017/11/11 13:13:57 packer: 2017/11/11 13:13:57 [DEBUG] Discovered extension: os-floating-ip-pools
+2017/11/11 13:13:57 packer: 2017/11/11 13:13:57 [DEBUG] Discovered extension: os-floating-ips
+2017/11/11 13:13:57 packer: 2017/11/11 13:13:57 [DEBUG] Discovered extension: os-floating-ips-bulk
+2017/11/11 13:13:57 packer: 2017/11/11 13:13:57 [DEBUG] Discovered extension: os-fping
+2017/11/11 13:13:57 packer: 2017/11/11 13:13:57 [DEBUG] Discovered extension: os-hide-server-addresses
+2017/11/11 13:13:57 packer: 2017/11/11 13:13:57 [DEBUG] Discovered extension: os-hosts
+2017/11/11 13:13:57 packer: 2017/11/11 13:13:57 [DEBUG] Discovered extension: os-hypervisor-status
+2017/11/11 13:13:57 packer: 2017/11/11 13:13:57 [DEBUG] Discovered extension: os-hypervisors
+2017/11/11 13:13:57 packer: 2017/11/11 13:13:57 [DEBUG] Discovered extension: os-instance-actions
+2017/11/11 13:13:57 packer: 2017/11/11 13:13:57 [DEBUG] Discovered extension: os-instance_usage_audit_log
+2017/11/11 13:13:57 packer: 2017/11/11 13:13:57 [DEBUG] Discovered extension: os-keypairs
+2017/11/11 13:13:57 packer: 2017/11/11 13:13:57 [DEBUG] Discovered extension: os-lock-server
+2017/11/11 13:13:57 packer: 2017/11/11 13:13:57 [DEBUG] Discovered extension: os-migrate-server
+2017/11/11 13:13:57 packer: 2017/11/11 13:13:57 [DEBUG] Discovered extension: os-migrations
+2017/11/11 13:13:57 packer: 2017/11/11 13:13:57 [DEBUG] Discovered extension: os-multiple-create
+2017/11/11 13:13:57 packer: 2017/11/11 13:13:57 [DEBUG] Discovered extension: os-networks
+2017/11/11 13:13:57 packer: 2017/11/11 13:13:57 [DEBUG] Discovered extension: os-networks-associate
+2017/11/11 13:13:57 packer: 2017/11/11 13:13:57 [DEBUG] Discovered extension: os-pause-server
+2017/11/11 13:13:57 packer: 2017/11/11 13:13:57 [DEBUG] Discovered extension: os-personality
+2017/11/11 13:13:57 packer: 2017/11/11 13:13:57 [DEBUG] Discovered extension: os-preserve-ephemeral-rebuild
+2017/11/11 13:13:57 packer: 2017/11/11 13:13:57 [DEBUG] Discovered extension: os-quota-class-sets
+2017/11/11 13:13:57 packer: 2017/11/11 13:13:57 [DEBUG] Discovered extension: os-quota-sets
+2017/11/11 13:13:57 packer: 2017/11/11 13:13:57 [DEBUG] Discovered extension: os-rescue
+2017/11/11 13:13:57 packer: 2017/11/11 13:13:57 [DEBUG] Discovered extension: os-security-group-default-rules
+2017/11/11 13:13:57 packer: 2017/11/11 13:13:57 [DEBUG] Discovered extension: os-security-groups
+2017/11/11 13:13:57 packer: 2017/11/11 13:13:57 [DEBUG] Discovered extension: os-server-diagnostics
+2017/11/11 13:13:57 packer: 2017/11/11 13:13:57 [DEBUG] Discovered extension: os-server-external-events
+2017/11/11 13:13:57 packer: 2017/11/11 13:13:57 [DEBUG] Discovered extension: os-server-group-quotas
+2017/11/11 13:13:57 packer: 2017/11/11 13:13:57 [DEBUG] Discovered extension: os-server-groups
+2017/11/11 13:13:57 packer: 2017/11/11 13:13:57 [DEBUG] Discovered extension: os-server-list-multi-status
+2017/11/11 13:13:57 packer: 2017/11/11 13:13:57 [DEBUG] Discovered extension: os-server-password
+2017/11/11 13:13:57 packer: 2017/11/11 13:13:57 [DEBUG] Discovered extension: os-server-sort-keys
+2017/11/11 13:13:57 packer: 2017/11/11 13:13:57 [DEBUG] Discovered extension: os-server-start-stop
+2017/11/11 13:13:57 packer: 2017/11/11 13:13:57 [DEBUG] Discovered extension: os-services
+2017/11/11 13:13:57 packer: 2017/11/11 13:13:57 [DEBUG] Discovered extension: os-shelve
+2017/11/11 13:13:57 packer: 2017/11/11 13:13:57 [DEBUG] Discovered extension: os-simple-tenant-usage
+2017/11/11 13:13:57 packer: 2017/11/11 13:13:57 [DEBUG] Discovered extension: os-suspend-server
+2017/11/11 13:13:57 packer: 2017/11/11 13:13:57 [DEBUG] Discovered extension: os-tenant-networks
+2017/11/11 13:13:57 packer: 2017/11/11 13:13:57 [DEBUG] Discovered extension: os-used-limits
+2017/11/11 13:13:57 packer: 2017/11/11 13:13:57 [DEBUG] Discovered extension: os-used-limits-for-admin
+2017/11/11 13:13:57 packer: 2017/11/11 13:13:57 [DEBUG] Discovered extension: os-user-data
+2017/11/11 13:13:57 packer: 2017/11/11 13:13:57 [DEBUG] Discovered extension: os-user-quotas
+2017/11/11 13:13:57 packer: 2017/11/11 13:13:57 [DEBUG] Discovered extension: os-virtual-interfaces
+2017/11/11 13:13:57 packer: 2017/11/11 13:13:57 [DEBUG] Discovered extension: os-volume-attachment-update
+2017/11/11 13:13:57 packer: 2017/11/11 13:13:57 [DEBUG] Discovered extension: os-volumes
+2017/11/11 13:13:57 ui: [1;32m==> openstack: Loading flavor: m4.medium[0m
+2017/11/11 13:13:57 packer: 2017/11/11 13:13:57 [INFO] Loading flavor by ID: m4.medium
+2017/11/11 13:13:57 packer: 2017/11/11 13:13:57 [ERROR] Failed to find flavor by ID: Resource not found
+2017/11/11 13:13:57 packer: 2017/11/11 13:13:57 [INFO] Loading flavor by name: m4.medium
+2017/11/11 13:13:58 ui: [0;32m    openstack: Verified flavor. ID: 48c14116-f693-4bfd-9966-fa7d98d471fe[0m
+2017/11/11 13:13:58 ui: [1;32m==> openstack: Creating temporary keypair: packer_5a076815-06e0-c52f-0890-27dfee4fb1c3 ...[0m
+2017/11/11 13:13:58 ui: [1;32m==> openstack: Created temporary keypair: packer_5a076815-06e0-c52f-0890-27dfee4fb1c3[0m
+2017/11/11 13:13:58 packer: 2017/11/11 13:13:58 Couldn't parse SSH key, trying work around for [GH-2526].
+2017/11/11 13:13:58 packer: 2017/11/11 13:13:58 Executing: /opt/local/bin/openssl [rsa -in /var/folders/lp/r_zxbw350rx2nf5pyp_c956c0000gn/T/packer-ber-privatekey-893305190 -out /var/folders/lp/r_zxbw350rx2nf5pyp_c956c0000gn/T/packer-der-privatekey-481046413]
+2017/11/11 13:13:58 ui: [1;32m==> openstack: Successfully converted BER encoded SSH key to DER encoding.[0m
+2017/11/11 13:13:58 ui: [1;32m==> openstack: Launching server...[0m
+2017/11/11 13:13:59 ui: [0;32m    openstack: Server ID: 716b3ea0-e03c-435c-ba09-4144944cc38e[0m
+2017/11/11 13:13:59 packer: 2017/11/11 13:13:59 server id: 716b3ea0-e03c-435c-ba09-4144944cc38e
+2017/11/11 13:13:59 ui: [1;32m==> openstack: Waiting for server to become ready...[0m
+2017/11/11 13:13:59 packer: 2017/11/11 13:13:59 Waiting for state to become: [ACTIVE]
+2017/11/11 13:13:59 packer: 2017/11/11 13:13:59 Waiting for state to become: [ACTIVE] currently BUILD (0%)
+2017/11/11 13:14:02 packer: 2017/11/11 13:14:02 Waiting for state to become: [ACTIVE] currently BUILD (0%)
+2017/11/11 13:14:04 packer: 2017/11/11 13:14:04 Waiting for state to become: [ACTIVE] currently BUILD (0%)
+2017/11/11 13:14:06 packer: 2017/11/11 13:14:06 Waiting for state to become: [ACTIVE] currently BUILD (0%)
+2017/11/11 13:14:09 packer: 2017/11/11 13:14:09 Waiting for state to become: [ACTIVE] currently BUILD (0%)
+2017/11/11 13:14:11 packer: 2017/11/11 13:14:11 [INFO] Not using winrm communicator, skipping get password...
+2017/11/11 13:14:11 packer: 2017/11/11 13:14:11 [INFO] Waiting for SSH, up to timeout: 5m0s
+2017/11/11 13:14:11 ui: [1;32m==> openstack: Waiting for SSH to become available...[0m
+2017/11/11 13:14:11 packer: 2017/11/11 13:14:11 [DEBUG] Detected address: 10.10.243.165
+2017/11/11 13:14:11 packer: 2017/11/11 13:14:11 [DEBUG] Using IP address 10.10.243.165 to connect
+2017/11/11 13:14:22 packer: 2017/11/11 13:14:22 [DEBUG] TCP connection to SSH ip/port failed: dial tcp 10.10.243.165:22: getsockopt: connection refused
+2017/11/11 13:14:27 packer: 2017/11/11 13:14:27 [DEBUG] Detected address: 10.10.243.165
+2017/11/11 13:14:27 packer: 2017/11/11 13:14:27 [DEBUG] Using IP address 10.10.243.165 to connect
+2017/11/11 13:14:27 packer: 2017/11/11 13:14:27 [INFO] Attempting SSH connection...
+2017/11/11 13:14:27 packer: 2017/11/11 13:14:27 reconnecting to TCP connection for SSH
+2017/11/11 13:14:27 packer: 2017/11/11 13:14:27 handshaking with SSH
+2017/11/11 13:14:28 packer: 2017/11/11 13:14:28 handshake error: ssh: handshake failed: ssh: unable to authenticate, attempted methods [none publickey], no supported methods remain
+2017/11/11 13:14:28 packer: 2017/11/11 13:14:28 [DEBUG] SSH handshake err: ssh: handshake failed: ssh: unable to authenticate, attempted methods [none publickey], no supported methods remain
+2017/11/11 13:14:28 packer: 2017/11/11 13:14:28 [DEBUG] Detected authentication error. Increasing handshake attempts.
+2017/11/11 13:14:35 packer: 2017/11/11 13:14:35 [DEBUG] Detected address: 10.10.243.165
+2017/11/11 13:14:35 packer: 2017/11/11 13:14:35 [DEBUG] Using IP address 10.10.243.165 to connect
+2017/11/11 13:14:35 packer: 2017/11/11 13:14:35 [INFO] Attempting SSH connection...
+2017/11/11 13:14:35 packer: 2017/11/11 13:14:35 reconnecting to TCP connection for SSH
+2017/11/11 13:14:35 packer: 2017/11/11 13:14:35 handshaking with SSH
+2017/11/11 13:14:35 packer: 2017/11/11 13:14:35 handshake complete!
+2017/11/11 13:14:35 packer: 2017/11/11 13:14:35 opening new ssh session
+2017/11/11 13:14:35 packer: 2017/11/11 13:14:35 [INFO] agent forwarding enabled
+2017/11/11 13:14:35 ui: [1;32m==> openstack: Connected to SSH![0m
+2017/11/11 13:14:35 packer: 2017/11/11 13:14:35 Running the provision hook
+2017/11/11 13:14:35 [INFO] (telemetry) Starting provisioner shell
+2017/11/11 13:14:35 ui: [1;32m==> openstack: Provisioning with shell script: /var/folders/lp/r_zxbw350rx2nf5pyp_c956c0000gn/T/packer-shell873675266[0m
+2017/11/11 13:14:35 packer: 2017/11/11 13:14:35 Opening /var/folders/lp/r_zxbw350rx2nf5pyp_c956c0000gn/T/packer-shell873675266 for reading
+2017/11/11 13:14:35 packer: 2017/11/11 13:14:35 [INFO] 27 bytes written for 'uploadData'
+2017/11/11 13:14:35 [INFO] 27 bytes written for 'uploadData'
+2017/11/11 13:14:35 packer: 2017/11/11 13:14:35 opening new ssh session
+2017/11/11 13:14:35 packer: 2017/11/11 13:14:35 Starting remote scp process:  scp -vt /tmp
+2017/11/11 13:14:35 packer: 2017/11/11 13:14:35 Started SCP session, beginning transfers...
+2017/11/11 13:14:35 packer: 2017/11/11 13:14:35 Copying input data into temporary file so we can read the length
+2017/11/11 13:14:35 packer: 2017/11/11 13:14:35 [DEBUG] scp: Uploading script_7325.sh: perms=C0644 size=27
+2017/11/11 13:14:35 packer: 2017/11/11 13:14:35 SCP session complete, closing stdin pipe.
+2017/11/11 13:14:35 packer: 2017/11/11 13:14:35 Waiting for SSH session to complete.
+2017/11/11 13:14:35 packer: 2017/11/11 13:14:35 scp stderr (length 30): Sink: C0644 27 script_7325.sh
+2017/11/11 13:14:35 packer: 2017/11/11 13:14:35 opening new ssh session
+2017/11/11 13:14:35 packer: 2017/11/11 13:14:35 starting remote command: chmod 0755 /tmp/script_7325.sh
+2017/11/11 13:14:35 packer: 2017/11/11 13:14:35 [INFO] RPC endpoint: Communicator ended with: 0
+2017/11/11 13:14:35 [INFO] RPC client: Communicator ended with: 0
+2017/11/11 13:14:35 [INFO] RPC endpoint: Communicator ended with: 0
+2017/11/11 13:14:35 packer: 2017/11/11 13:14:35 [INFO] RPC client: Communicator ended with: 0
+2017/11/11 13:14:35 packer: 2017/11/11 13:14:35 opening new ssh session
+2017/11/11 13:14:35 packer: 2017/11/11 13:14:35 starting remote command: chmod +x /tmp/script_7325.sh; PACKER_BUILDER_TYPE='openstack' PACKER_BUILD_NAME='openstack'  /tmp/script_7325.sh
+2017/11/11 13:14:35 ui: [0;32m    openstack: Shutdown scheduled for Sat 2017-11-11 21:15:35 UTC, use 'shutdown -c' to cancel.[0m
+2017/11/11 13:14:35 packer: 2017/11/11 13:14:35 [INFO] RPC endpoint: Communicator ended with: 0
+2017/11/11 13:14:35 [INFO] 81 bytes written for 'stderr'
+2017/11/11 13:14:35 [INFO] 0 bytes written for 'stdout'
+2017/11/11 13:14:35 [INFO] RPC client: Communicator ended with: 0
+2017/11/11 13:14:35 [INFO] RPC endpoint: Communicator ended with: 0
+2017/11/11 13:14:35 packer: 2017/11/11 13:14:35 [INFO] 0 bytes written for 'stdout'
+2017/11/11 13:14:35 packer: 2017/11/11 13:14:35 [INFO] 81 bytes written for 'stderr'
+2017/11/11 13:14:35 packer: 2017/11/11 13:14:35 [INFO] RPC client: Communicator ended with: 0
+2017/11/11 13:14:35 packer: 2017/11/11 13:14:35 opening new ssh session
+2017/11/11 13:14:35 packer: 2017/11/11 13:14:35 starting remote command: rm -f /tmp/script_7325.sh
+2017/11/11 13:14:35 packer: 2017/11/11 13:14:35 [INFO] RPC endpoint: Communicator ended with: 0
+2017/11/11 13:14:35 [INFO] RPC client: Communicator ended with: 0
+2017/11/11 13:14:35 [INFO] RPC endpoint: Communicator ended with: 0
+2017/11/11 13:14:35 packer: 2017/11/11 13:14:35 [INFO] RPC client: Communicator ended with: 0
+2017/11/11 13:14:35 [INFO] (telemetry) ending shell
+2017/11/11 13:14:35 [INFO] (telemetry) Starting provisioner shell-local
+2017/11/11 13:14:35 ui: [1;32m==> openstack: Executing local command: sleep 90[0m
+2017/11/11 13:16:05 [INFO] (telemetry) ending shell-local
+2017/11/11 13:16:05 ui: [1;32m==> openstack: Stopping server: 716b3ea0-e03c-435c-ba09-4144944cc38e ...[0m
+2017/11/11 13:16:05 ui: [1;32m==> openstack: Terminating the source server: 716b3ea0-e03c-435c-ba09-4144944cc38e ...[0m
+2017/11/11 13:16:06 packer: 2017/11/11 13:16:06 Waiting for state to become: [DELETED]
+2017/11/11 13:16:06 packer: 2017/11/11 13:16:06 Waiting for state to become: [DELETED] currently SHUTOFF (0%)
+2017/11/11 13:16:08 packer: 2017/11/11 13:16:08 Waiting for state to become: [DELETED] currently SHUTOFF (0%)
+2017/11/11 13:16:11 packer: 2017/11/11 13:16:11 [INFO] 404 on ServerStateRefresh, returning DELETED
+2017/11/11 13:16:11 ui: [1;32m==> openstack: Deleting temporary keypair: packer_5a076815-06e0-c52f-0890-27dfee4fb1c3 ...[0m
+2017/11/11 13:16:11 [INFO] (telemetry) ending openstack
+2017/11/11 13:16:11 [INFO] (telemetry) found error: Error stopping server: Expected HTTP response code [201 202] when accessing [POST https://sj1sz1-openstack.corp.adobe.com:8774/v2.1/servers/716b3ea0-e03c-435c-ba09-4144944cc38e/action], but got 409 instead
+{"conflictingRequest": {"message": "Cannot 'stop' instance 716b3ea0-e03c-435c-ba09-4144944cc38e while it is in vm_state stopped", "code": 409}}
+2017/11/11 13:16:11 ui error: [1;31mBuild 'openstack' errored: Error stopping server: Expected HTTP response code [201 202] when accessing [POST https://sj1sz1-openstack.corp.adobe.com:8774/v2.1/servers/716b3ea0-e03c-435c-ba09-4144944cc38e/action], but got 409 instead
+{"conflictingRequest": {"message": "Cannot 'stop' instance 716b3ea0-e03c-435c-ba09-4144944cc38e while it is in vm_state stopped", "code": 409}}[0m
+2017/11/11 13:16:11 Builds completed. Waiting on interrupt barrier...
+2017/11/11 13:16:11 machine readable: error-count []string{"1"}
+2017/11/11 13:16:11 ui error: 
+==> Some builds didn't complete successfully and had errors:
+2017/11/11 13:16:11 machine readable: openstack,error []string{"Error stopping server: Expected HTTP response code [201 202] when accessing [POST https://sj1sz1-openstack.corp.adobe.com:8774/v2.1/servers/716b3ea0-e03c-435c-ba09-4144944cc38e/action], but got 409 instead\n{\"conflictingRequest\": {\"message\": \"Cannot 'stop' instance 716b3ea0-e03c-435c-ba09-4144944cc38e while it is in vm_state stopped\", \"code\": 409}}"}
+2017/11/11 13:16:11 ui error: --> openstack: Error stopping server: Expected HTTP response code [201 202] when accessing [POST https://sj1sz1-openstack.corp.adobe.com:8774/v2.1/servers/716b3ea0-e03c-435c-ba09-4144944cc38e/action], but got 409 instead
+{"conflictingRequest": {"message": "Cannot 'stop' instance 716b3ea0-e03c-435c-ba09-4144944cc38e while it is in vm_state stopped", "code": 409}}
+2017/11/11 13:16:11 ui: 
+==> Builds finished but no artifacts were created.
+2017/11/11 13:16:11 [INFO] (telemetry) Finalizing.
+2017/11/11 13:16:11 waiting for all plugin processes to complete...
+2017/11/11 13:16:11 /files/go/bin/packer: plugin process exited
+2017/11/11 13:16:11 /files/go/bin/packer: plugin process exited
+2017/11/11 13:16:11 /files/go/bin/packer: plugin process exited
