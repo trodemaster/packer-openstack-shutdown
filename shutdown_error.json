@@ -1,0 +1,37 @@
+{
+  "variables": {
+    "OS_AUTH_URL": "{{env `OS_AUTH_URL`}}",
+    "OS_USERNAME": "{{env `OS_USERNAME`}}",
+    "OS_PASSWORD": "{{env `OS_PASSWORD`}}",
+    "OS_REGION_NAME": "{{env `OS_REGION_NAME`}}",
+    "OS_TENANT_NAME": "{{env `OS_TENANT_NAME`}}",
+    "OPENSTACK_NETWORK": "{{env `OPENSTACK_NETWORK`}}"
+  },
+  "builders": [
+{
+  "type": "openstack",
+  "identity_endpoint": "{{user `OS_AUTH_URL`}}",
+  "username": "{{user `OS_USERNAME`}}",
+  "password": "{{user `OS_PASSWORD`}}",
+  "region": "{{user `OS_REGION_NAME`}}",
+  "tenant_name": "{{user `OS_TENANT_NAME`}}",
+  "networks": "{{user `OPENSTACK_NETWORK`}}",
+  "flavor": "m4.medium",
+  "image_name": "packer-Ubuntu1604-shutdown",
+  "source_image_name": "packer-Ubuntu1604",
+  "ssh_username": "root",
+  "user_data_file": "user_data"
+}
+],
+  "provisioners": [
+    {
+      "type": "shell",
+      "expect_disconnect": true,
+      "inline": "shutdown -h 1"
+    },
+    {
+      "type": "shell-local",
+      "command": "sleep 90"
+    }
+  ]
+}

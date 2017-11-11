@@ -1,0 +1,15 @@
+#cloud-config
+
+# this user_data is specific to our internal images and likely not needed for other images...
+
+disable_root: False
+
+users:
+  - name: root
+
+runcmd:
+- sed -i '/tmp/d' /etc/fstab
+- mount -o remount,exec /tmp
+- sed -i '/PermitRootLogin/d' /etc/ssh/sshd_config
+- echo "PermitRootLogin yes" >> /etc/ssh/sshd_config
+- 'if ! $(service sshd restart); then service ssh restart; fi'

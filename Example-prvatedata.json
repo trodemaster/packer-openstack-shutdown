@@ -1,0 +1,8 @@
+{
+  "OS_AUTH_URL": "https://openstack.org.domain.com:5000/v2.0/",
+  "OS_PASSWORD": "OpenStack Password",
+  "OS_REGION_NAME": "OpenStack Region",
+  "OS_TENANT_NAME": "OpenStack Project name",
+  "OS_USERNAME": "OpenStack Username",
+  "OPENSTACK_NETWORK": "Provider network GUID"
+}
